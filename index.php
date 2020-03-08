@@ -30,7 +30,7 @@
                 <td><?= $i; ?></td>
                 <td>
                     <a href="">ubah</a> |
-                    <a href="">hapus</a>
+                    <a href="hapus/hapus.php?id=<?= $mhs["id"]; ?>" onclick="return confirm('yakin?');">hapus</a>
                 </td>
                 <td><?= $mhs["gambar"]; ?></td>
                 <td><?= $mhs["nrp"]; ?></td>
