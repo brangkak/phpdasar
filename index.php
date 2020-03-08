@@ -1,8 +1,5 @@
 <?php 
-    // menghubungkan file index ke function
     require 'function/functions.php';
-
-    // megirim data menggunakan fungsi
     $mahasiswa = query("SELECT * FROM mahasiswa");
 
 ?>
@@ -16,6 +13,7 @@
 </head>
 <body>
     <h1>Daftar Mahasiswa</h1>
+    <a href="tambah/tambah.php">Tambah Mahasisa</a>
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No.</th>
@@ -26,9 +24,7 @@
             <th>Jurusan</th>
             <th>Email</th>
         </tr>
-        <!-- mendeklarasikan angka -->
         <?php $i = 1; ?>
-        <!-- menggunakan perulangan khusus array di php -->
         <?php foreach( $mahasiswa as $mhs ) : ?>
             <tr>
                 <td><?= $i; ?></td>
